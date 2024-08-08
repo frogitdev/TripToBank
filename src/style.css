@@ -1,0 +1,113 @@
+/* ROOT ELEMENTS */
+
+html, body {
+    margin: 0;
+}
+
+* {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+#screen {
+    width: 100vw;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background: #e9e9f0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 2px 10px;
+    border-radius: 15px;
+    border: none;
+    outline: 1px solid #CDE8E5;
+    background: #EEF7FF;
+    color: #7AB2B2;
+}
+
+select, input[type="datetime-local"], input[type="text"], input[type="number"] {
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background: none;
+    color: #777;
+}
+
+textarea {
+    width: 100vw;
+    height: 50vh;
+}
+
+.big-number {
+    max-width: 50%;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: right;
+}
+
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: #777;
+}
+
+.accbox {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+}
+.accbox .selected {
+    text-decoration: underline;
+}
+
+#new-trx-form {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background: #EEF7FF;
+}
+
+.trxbox {
+    margin-top: 15px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: white;
+    color: #777;
+}
+.trxbox-left {
+    text-align: left;
+    font-size: .8em;
+}
+.trxbox-left span {
+    padding: 2px 10px;
+    border-radius: 10px;
+    border: 1px solid #CDE8E5;
+    background: #EEF7FF;
+    color: #7AB2B2;
+}
+.trxbox-right {
+    text-align: right;
+}
